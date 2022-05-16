@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Кандидат {{candidate.name}}</title>
+<link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+    <img src="{{candidate.picture}}">
+    <h2>{{candidate.name}}</h2>
+    <div class="about">
+        <span>Позиция:</span>{{candidate.position}}
+    </div>
+    <div class="about">
+        <span>Возраст:</span>{{candidate.age}}
+    </div>
+    <div class="about">
+        <span>Пол:</span>{{candidate.gender}}
+    </div>
+    <div class="about">
+        <span>Навыки:</span>{{candidate.skills}}
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Список кандидатов удовлетворяющих условию имя содержит {{uid}}</title>
+<link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+    <h1>Найдено {{len_list}} кандидатов удовлетворяющих условию имя содержит {{uid}}</h1>
+    {% for person in candidates %}
+        <div class="p_list_candidates">
+            <img src="{{person.picture}}" class="left_img">
+            <a href="/candidate/{{person.id}}">{{person.name}}</a>
+        </div>
+        <hr>
+    {% endfor %}
+</body>
+</html>
